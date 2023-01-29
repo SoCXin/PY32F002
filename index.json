@@ -1,0 +1,37 @@
+{
+    "type":"MCU",
+    "name":"PY32F002",
+    "title": "PuyaSemi PY32F002 MCU",
+    "description":"PuyaSemi Low Cost MCU",
+    "Core": {
+        "CoreNum": 1,
+        "Core":"Cortex-M0",
+        "Fmax":24,
+        "DMIPS": 24,
+        "CoreMark": 40
+    },
+    "manufacturer": {
+        "vendor":"PuyaSemi",
+        "homepage":"https://www.puyasemi.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/PY32F002.git"
+    },
+    "version":"1.0.0",
+    "series":["PY32F002AW","PY32F002AL"],
+    "package":["QFN16","SOP-16","TSSOP20","SOP-8"],
+    "peripheral": ["ADC","USART","SPI","I2C"],
+    "temp": [-40,85],
+    "volt": [1.7,5.5],
+    "ESD": {
+        "HBM": 4000,
+        "CDM": 500
+    },
+    "keywords": [
+        "Cortex-M0",
+        "PuyaSemi",
+        "ADC","I2C","SPI","USART"
+    ]
+}
+
