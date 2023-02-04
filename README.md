@@ -22,6 +22,10 @@
 
 ## [选型建议](https://github.com/SoCXin/PY32F002)
 
-[PY32F002](https://item.szlcsc.com/6036161.html)非常低成本的MCU方案
+[PY32F002](https://item.szlcsc.com/6036161.html)非常低成本的MCU方案。
+
+### 参考方案
+
+[py32f0-template](https://github.com/IOsetting/py32f0-template)
 
 ## [www.SoC.xin](http://www.SoC.Xin)

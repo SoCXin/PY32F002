@@ -1,0 +1,33 @@
+name: src
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - '**.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: Install gun gcc
+        run: |
+          wget https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
+          sudo mkdir -p /opt/gcc-arm/
+          sudo tar xvf arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz -C /opt/gcc-arm/
+          cd /opt/gcc-arm/
+          sudo chown -R root:root arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/
+          # tar -xf sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
+          # echo `pwd`/sdcc-4.0.0/bin >> $GITHUB_PATH
+
+      - name: Build
+        working-directory: src
+        run: make
+
