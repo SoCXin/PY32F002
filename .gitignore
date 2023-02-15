@@ -44,9 +44,6 @@ LICENSE*
 core_armv8*
 *.uvgu*
 # .gitmodules
-# *.png
-*.jpg
-*.rst
 .travis.yml
 tests
 # mk

@@ -1,4 +1,4 @@
-﻿# [PY32F002](https://www.soc.xin/PY32F002)
+﻿# [PY32F002A](https://www.soc.xin/PY32F002)
 
 [![Build Status](https://github.com/SoCXin/PY32F002/workflows/templates/badge.svg)](https://github.com/SoCXin/PY32F002/actions/workflows/templates.yml)
 
