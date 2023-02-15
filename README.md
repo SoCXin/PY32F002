@@ -39,8 +39,17 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 
 作为对比，STM32G030 [TSSOP20(￥2.56)](https://item.szlcsc.com/769428.html)
 
-普冉半导体[PuyaSemi](https://www.puyasemi.com/)是低功耗SPI NOR Flash存储器芯片和高可靠性IC EEPROM存储器芯片的供应商，相似的MCU产品PY32F003系列：
+普冉半导体[PuyaSemi](https://www.puyasemi.com/)是低功耗SPI NOR Flash存储器芯片和高可靠性IC EEPROM存储器芯片的供应商
+
+PY32F002A之上的MCU产品还包括PY32F003系列：
 
 * [PY32F003L16S6TU(SOP-8,￥1.07)](https://item.szlcsc.com/5732433.html)
 * [PY32F003L24D6TR(DFN-8,￥1.18)](https://item.szlcsc.com/5732434.html)
 * [PY32F003W16S6TU(SOP-16,￥0.86)](https://item.szlcsc.com/5732435.html)
+
+以及PY32F030系列：
+
+* [PY32F030K28U6TR(QFN32,￥2.59)](https://item.szlcsc.com/3531932.html)
+* [PY32F030K28T6(LQFP32,￥1.18)](https://item.szlcsc.com/3531934.html)
+
+但之后的其他系列性价比不及PY32F002A(在￥1.0内性价比极高)，超过￥2.0可以选择的范围更广。
