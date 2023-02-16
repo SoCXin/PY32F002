@@ -1,6 +1,7 @@
 ﻿# [PY32F002A](https://www.soc.xin/PY32F002)
 
 [![Build Status](https://github.com/SoCXin/PY32F002/workflows/templates/badge.svg)](https://github.com/SoCXin/PY32F002/actions/workflows/templates.yml)
+[![Build Status](https://github.com/SoCXin/PY32F002/workflows/docs/badge.svg)](https://www.soc.xin/PY32F002)
 
 * [PuyaSemi](https://www.puyasemi.com/): [Cortex-M0+](https://github.com/SoCXin/Cortex)
 * [L1R1](https://github.com/SoCXin/Level): 24 MHz , [￥0.56(SOP-8)](https://item.szlcsc.com/6036161.html)
