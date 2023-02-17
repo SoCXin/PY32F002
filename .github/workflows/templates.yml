@@ -31,8 +31,11 @@ jobs:
         shell: bash
         run: |
           make
+          mkdir output
+          mv Build/app.hex output/
+          mv Build/app.bin output/
 
       - uses: actions/upload-artifact@v3
         with:
-          name: App
-          path: templates/makefile/Build/app.hex
+          name: template
+          path: templates/makefile/output

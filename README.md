@@ -1,12 +1,14 @@
-﻿# [PY32F002A](https://www.soc.xin/PY32F002)
+﻿# [PY32F0xx](https://www.soc.xin/PY32F002)
 
 [![Build Status](https://github.com/SoCXin/PY32F002/workflows/templates/badge.svg)](https://github.com/SoCXin/PY32F002/actions/workflows/templates.yml)
 [![Build Status](https://github.com/SoCXin/PY32F002/workflows/docs/badge.svg)](https://www.soc.xin/PY32F002)
 
 * [PuyaSemi](https://www.puyasemi.com/): [Cortex-M0+](https://github.com/SoCXin/Cortex)
-* [L1R1](https://github.com/SoCXin/Level): 24 MHz , [￥0.56(SOP-8)](https://item.szlcsc.com/6036161.html)
+* [L1R1](https://github.com/SoCXin/Level): 24 MHz , [￥0.56 (SOP8)](https://item.szlcsc.com/6036161.html)
 
 ## [简介](https://github.com/SoCXin/PY32F002/wiki)
+
+仓库资源可应用于PY32F0xx系列MCU，包括PY32F030、PY32F003和PY32F002A，主要以高性价比的PY32F002A为主。
 
 [PY32F002A](https://www.puyasemi.com/cpzx3/info_267_aid_242_kid_235.html) 系列微控制器采用高性能的 32 位 ARM® Cortex®-M0+内核，宽电压工作范围的 MCU。嵌入高
 达 20Kbytes flash 和 3Kbytes SRAM 存储器，最高工作频率 24MHz。包含多种不同封装类型多款产品。芯片集成多路 I2C、SPI、USART 等通讯外设，1 路 12bit ADC，多个定时器。
@@ -15,7 +17,7 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 
 ### 关键参数
 
-* 24 MHz Cortex-M0+
+* 24 MHz [Cortex-M0+](https://www.soc.xin/Cortex-M0)
 * 3KB SRAM + 20KB Flash
 * USART + SPI + I2C
 * 12-bit ADC (9ch)
@@ -27,9 +29,17 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 * [参考文档](docs/)
 * [工程模板](templates/)
 
-本平台非常适用于低成本控制器方案[Modbus RTU Slave](https://www.os-q.com/qio/template/modbus.html#modbus-rtu)
+提供跨平台编译工具[platform-puya](https://github.com/OS-Q/platform-puya)，[PY32F002A](https://www.soc.xin/PY32F002)非常适用于低成本控制器方案[Modbus RTU Slave](https://www.os-q.com/qio/templates/rtu)
 
 ## [选型建议](https://github.com/SoCXin/PY32F002)
+
+* PY32F002A
+  * PY32F002Ax5(20KB Flash/3KB RAM)
+* PY32F003
+  * PY32F003x4(16KB Flash/2KB RAM), PY32F003x6(32KB Flash/4KB RAM), PY32F003x8(64KB Flash/8KB RAM)
+* PY32F030
+  * PY32F030x4(16KB Flash/2KB RAM), PY32F030x6(32KB Flash/4KB RAM), PY32F030x7(48KB Flash/6KB RAM), PY32F030x8(64KB Flash/8KB RAM)
+
 
 [PY32F002A](https://www.soc.xin/PY32F002)极低成本flash MCU，也是目前最便宜的Cortex-M0芯片，包括：
 
@@ -55,9 +65,3 @@ PY32F002A之上的MCU产品还包括PY32F003系列：
 
 但之后的其他系列性价比不及PY32F002A(在￥1.0内性价比极高)，超过￥2.0可以选择的范围更广。
 
-* PY32F002A
-  * PY32F002Ax5(20KB Flash/3KB RAM)
-* PY32F003
-  * PY32F003x4(16KB Flash/2KB RAM), PY32F003x6(32KB Flash/4KB RAM), PY32F003x8(64KB Flash/8KB RAM)
-* PY32F030
-  * PY32F030x4(16KB Flash/2KB RAM), PY32F030x6(32KB Flash/4KB RAM), PY32F030x7(48KB Flash/6KB RAM), PY32F030x8(64KB Flash/8KB RAM)
