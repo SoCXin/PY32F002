@@ -1,23 +1,10 @@
-# py32f0-template
+# [py32f0-template](https://github.com/IOsetting/py32f0-template)
+
+[![Build Status](https://github.com/SoCXin/PY32F002/workflows/templates/badge.svg)](https://github.com/SoCXin/PY32F002/actions/workflows/templates.yml)
 
 * Puya PY32F0 template project for GNU Arm Embedded Toolchain
 * Supported programmers: J-Link, DAPLink/PyOCD
 * Supported IDE: VSCode
-
-# Puya PY32F0 Family
-
-* PY32F002
-  * PY32F002x5(20KB Flash/3KB RAM)
-* PY32F002A
-  * PY32F002Ax5(20KB Flash/3KB RAM)
-* PY32F003
-  * PY32F003x4(16KB Flash/2KB RAM), PY32F003x6(32KB Flash/4KB RAM), PY32F003x8(64KB Flash/8KB RAM)
-* PY32F030
-  * PY32F030x4(16KB Flash/2KB RAM), PY32F030x6(32KB Flash/4KB RAM), PY32F030x7(48KB Flash/6KB RAM), PY32F030x8(64KB Flash/8KB RAM)
-* PY32F072
-  * PY32F072xB(128KB Flash/16KB RAM)
-
-**Note**
 
 There is high probability that PY32F002A, PY32F003 and PY32F030 share the same core, despite all the parts listed, you can treat them all as PY32F030 in coding and programming.
 
@@ -78,10 +65,9 @@ Download and install JLink from [J-Link / J-Trace Downloads](https://www.segger.
 
 ```bash
 # installation command for .deb
-sudo dpkg -i JLink_Linux_V784f_x86_64.deb
-# uncompression command for .tar.gz
-sudo tar xvf JLink_Linux_V784f_x86_64.tgz -C [target folder]
+sudo dpkg -i JLink_Linux_V786_x86_64.deb
 ```
+
 The default installation directory is */opt/SEGGER*
 
 Copy [Project directory]/Misc/Flash/JLinkDevices to [User home]/.config/SEGGER/JLinkDevices/
@@ -98,7 +84,7 @@ Don't install from apt repository, because the version 0.13.1+dfsg-1 is too low 
 Install PyOCD from pip
 
 ```bash
-pip uninstall pyocd
+pip install pyocd
 ```
 This will install PyOCD into:
 ```

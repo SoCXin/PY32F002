@@ -18,7 +18,7 @@ jobs:
           submodules: "recursive"
           fetch-depth: 1
 
-      - name: Install gun gcc
+      - name: Install GUN GCC
         run: |
           wget https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
           sudo mkdir -p /opt/gcc-arm/

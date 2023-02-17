@@ -33,6 +33,8 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 
 ## [选型建议](https://github.com/SoCXin/PY32F002)
 
+普冉半导体[PuyaSemi](https://www.puyasemi.com/)是低功耗SPI NOR Flash存储器芯片和高可靠性IC EEPROM存储器芯片的供应商
+
 * PY32F002A
   * PY32F002Ax5(20KB Flash/3KB RAM)
 * PY32F003
@@ -43,25 +45,21 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 
 [PY32F002A](https://www.soc.xin/PY32F002)极低成本flash MCU，也是目前最便宜的Cortex-M0芯片，包括：
 
-* [PY32F002AL15S6TU(SOP-8,￥0.56)](https://item.szlcsc.com/6036161.html)
-* [PY32F002AA15M6TU(ESSOP10,￥0.62)](https://item.szlcsc.com/6036159.html)
-* [PY32F002AW15U6TR(QFN16,￥0.72)](https://item.szlcsc.com/6035786.html)
-* [PY32F002AF15P6TU(TSSOP20,￥0.75)](https://item.szlcsc.com/6036160.html)
+* [PY32F002AL15S6TU (SOP8,￥0.56)](https://item.szlcsc.com/6036161.html)
+* [PY32F002AA15M6TU (ESSOP10,￥0.62)](https://item.szlcsc.com/6036159.html)
+* [PY32F002AW15U6TR (QFN16,￥0.72)](https://item.szlcsc.com/6035786.html)
+* [PY32F002AF15P6TU (TSSOP20,￥0.75)](https://item.szlcsc.com/6036160.html)
 
-作为对比，STM32G030 [TSSOP20(￥2.56)](https://item.szlcsc.com/769428.html)
+作为对比[STM32G030 TSSOP20(￥2.56)](https://item.szlcsc.com/769428.html)，PY32F002A之上的MCU产品还包括PY32F003系列：
 
-普冉半导体[PuyaSemi](https://www.puyasemi.com/)是低功耗SPI NOR Flash存储器芯片和高可靠性IC EEPROM存储器芯片的供应商
-
-PY32F002A之上的MCU产品还包括PY32F003系列：
-
-* [PY32F003L16S6TU(SOP-8,￥1.07)](https://item.szlcsc.com/5732433.html)
-* [PY32F003L24D6TR(DFN-8,￥1.18)](https://item.szlcsc.com/5732434.html)
-* [PY32F003W16S6TU(SOP-16,￥0.86)](https://item.szlcsc.com/5732435.html)
+* [PY32F003L16S6TU (SOP-8,￥1.07)](https://item.szlcsc.com/5732433.html)
+* [PY32F003L24D6TR (DFN-8,￥1.18)](https://item.szlcsc.com/5732434.html)
+* [PY32F003W16S6TU (SOP-16,￥0.86)](https://item.szlcsc.com/5732435.html)
 
 以及PY32F030系列：
 
-* [PY32F030K28U6TR(QFN32,￥2.59)](https://item.szlcsc.com/3531932.html)
-* [PY32F030K28T6(LQFP32,￥2.62)](https://item.szlcsc.com/3531934.html)
+* [PY32F030K28U6TR (QFN32,￥2.59)](https://item.szlcsc.com/3531932.html)
+* [PY32F030K28T6 (LQFP32,￥2.62)](https://item.szlcsc.com/3531934.html)
 
-但之后的其他系列性价比不及PY32F002A(在￥1.0内性价比极高)，超过￥2.0可以选择的范围更广。
+其他系列性价比不及PY32F002A(在￥1.0内性价比极高)，超过￥2.0可以选择的范围更广。
 
