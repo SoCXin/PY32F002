@@ -1,8 +1,9 @@
 /**
   ******************************************************************************
-  * @file    main.c
+  * @file    py32f0xx_hal_msp.c
   * @author  MCU Application Team
-  * @brief   Main program body
+  * @brief   This file provides code for the MSP Initialization
+  *          and de-Initialization codes.
   ******************************************************************************
   * @attention
   *
@@ -21,59 +22,23 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "py32f0xx_bsp_printf.h"
+#include "py32f0xx_hal.h"
 
+/* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-/* Private user code ---------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
+/* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
-static void APP_LedConfig(void);
+/* External functions --------------------------------------------------------*/
 
-
-int main(void)
-{
-  HAL_Init();                                 
-  APP_LedConfig();
-  BSP_USART_Config();
-  printf("SystemClk:%ld\r\n", SystemCoreClock);
-
-  while (1)
-  {
-    HAL_Delay(1000);                            
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-    printf("echo\r\n");
-  }
-}
-
-static void APP_LedConfig(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct;
-
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-}
-
-void APP_ErrorHandler(void)
-{
-  while (1);
-}
-
-#ifdef  USE_FULL_ASSERT
 /**
-  * @brief  Export assert error source and line number
+  * @brief  Configure the Flash prefetch and the Instruction cache,
+  *         the time base source, NVIC and any required global low level hardware
+  *         by calling the HAL_MspInit() callback function from HAL_Init()
+  *         
   */
-void assert_failed(uint8_t *file, uint32_t line)
+void HAL_MspInit(void)
 {
-  /* printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  while (1);
 }
-#endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT Puya *****END OF FILE******************/

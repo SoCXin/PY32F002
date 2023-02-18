@@ -1,6 +1,8 @@
 #include "main.h"
 #include "py32f0xx_it.h"
 
+extern void APP_TransferCompleteCallback(void);
+
 /**
   * @brief This function handles Non maskable interrupt.
   */
@@ -13,9 +15,7 @@ void NMI_Handler(void)
   */
 void HardFault_Handler(void)
 {
-  while (1)
-  {
-  }
+  while (1);
 }
 
 /**

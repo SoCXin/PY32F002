@@ -133,7 +133,7 @@ ENABLE_PRINTF_FLOAT ?= n
 USE_FREERTOS      ?= n
 # Build with CMSIS DSP functions, y:yes, n:no
 USE_DSP           ?= n
-# Programmer, jlink or pyocd
+# Programmer, jlink or pyocd(DAPLink)
 FLASH_PROGRM      ?= pyocd
 
 ##### Toolchains #######
@@ -166,6 +166,17 @@ LDSCRIPT          = Libraries/LDScripts/py32f030x8.ld
 #   PY32F030x3, PY32F030x4, PY32F030x6, PY32F030x7, PY32F030x8, 
 #   PY32F072xB
 LIB_FLAGS         = PY32F030x6
+```
+
+DAPLink调试问题
+```
+W [Errno 13] Access denied (insufficient permissions) while trying to interrogate a USB device (VID=0d28 PID=0204). This can probably be remedied with a udev rule. See <https://github.com/pyocd/pyOCD/tree/master/udev> for help. [pyusb_backend]
+```
+[修复方式](https://github.com/OS-Q/pyOCD/tree/main/udev)
+```
+$ sudo cp ../50-cmsis-dap.rules /etc/udev/rules.d
+$ sudo udevadm control --reload
+$ sudo udevadm trigger
 ```
 
 ## 5. Compiling And Flashing

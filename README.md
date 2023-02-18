@@ -42,7 +42,6 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 * PY32F030
   * PY32F030x4(16KB Flash/2KB RAM), PY32F030x6(32KB Flash/4KB RAM), PY32F030x7(48KB Flash/6KB RAM), PY32F030x8(64KB Flash/8KB RAM)
 
-
 [PY32F002A](https://www.soc.xin/PY32F002)极低成本flash MCU，也是目前最便宜的Cortex-M0芯片，包括：
 
 * [PY32F002AL15S6TU (SOP8,￥0.56)](https://item.szlcsc.com/6036161.html)
@@ -61,5 +60,7 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 * [PY32F030K28U6TR (QFN32,￥2.59)](https://item.szlcsc.com/3531932.html)
 * [PY32F030K28T6 (LQFP32,￥2.62)](https://item.szlcsc.com/3531934.html)
 
-其他系列性价比不及PY32F002A(在￥1.0内性价比极高)，超过￥2.0可以选择的范围更广。
+PY32F0xx的其他系列性价比不及PY32F002A(<￥1.0)，而TSSOP20以内封装超过￥2.0的选择范围很广
 
+* 在￥3.0段当下首推[CH32V203 (LQFP-48,￥2.86)](https://github.com/SoCXin/CH32V203)
+* 在￥5.0段当下超值[N32G430 (LQFP-48,￥4.5)](https://github.com/SoCXin/N32G430)，[RP2040 (QFN-56,￥4.3)](https://github.com/SoCXin/RP2040)
