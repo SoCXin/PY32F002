@@ -45,8 +45,8 @@ int main(void)
   APP_LED_Init();                            /* LED初始化 */
   while (1)
   {
-    HAL_Delay(250);                          /* 延时250ms */
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);   /* LED翻转 */
+    HAL_Delay(500);                          /* 延时250ms */
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);   /* LED翻转 */
   }
 }
 
@@ -59,7 +59,7 @@ void APP_LED_Init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStruct;
 
-  __HAL_RCC_GPIOA_CLK_ENABLE();                          /* GPIOA时钟使能 */
+  __HAL_RCC_GPIOB_CLK_ENABLE();                          /* GPIOA时钟使能 */
 
   /* 初始化GPIOA5 */
   GPIO_InitStruct.Pin = GPIO_PIN_5;
@@ -67,7 +67,7 @@ void APP_LED_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;                    /* 使能上拉 */
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;          /* GPIO速度 */
 
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);                /* GPIO初始化 */
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);                /* GPIO初始化 */
 }
 
 /**
