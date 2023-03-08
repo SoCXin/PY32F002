@@ -4,7 +4,7 @@
 [![Build Status](https://github.com/SoCXin/PY32F002/workflows/docs/badge.svg)](https://www.soc.xin/PY32F002)
 
 * [PuyaSemi](https://www.puyasemi.com/): [Cortex-M0+](https://github.com/SoCXin/Cortex)
-* [L1R1](https://github.com/SoCXin/Level): 24 MHz , [￥0.56 (SOP8)](https://item.szlcsc.com/6036161.html)
+* [L1R1](https://github.com/SoCXin/Level): 24 MHz , [￥0.52 (SOP8)](https://item.szlcsc.com/6036161.html)
 
 ## [简介](https://github.com/SoCXin/PY32F002/wiki)
 
@@ -42,10 +42,10 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 * PY32F030
   * PY32F030x4(16KB Flash/2KB RAM), PY32F030x6(32KB Flash/4KB RAM), PY32F030x7(48KB Flash/6KB RAM), PY32F030x8(64KB Flash/8KB RAM)
 
-[PY32F002A](https://www.soc.xin/PY32F002)极低成本flash MCU，也是目前最便宜的Cortex-M0芯片，包括：
+[PY32F002A](https://www.soc.xin/PY32F002)极低成本flash MCU，也是目前最便宜的Cortex-M0芯片，该系列包括：
 
-* [PY32F002AL15S6TU (SOP8,￥0.56)](https://item.szlcsc.com/6036161.html)
-* [PY32F002AA15M6TU (ESSOP10,￥0.62)](https://item.szlcsc.com/6036159.html)
+* [PY32F002AL15S6TU (SOP8,￥0.52)](https://item.szlcsc.com/6036161.html)
+* [PY32F002AA15M6TU (ESSOP10,￥0.57)](https://item.szlcsc.com/6036159.html)
 * [PY32F002AW15U6TR (QFN16,￥0.72)](https://item.szlcsc.com/6035786.html)
 * [PY32F002AF15P6TU (TSSOP20,￥0.75)](https://item.szlcsc.com/6036160.html)
 
@@ -60,7 +60,12 @@ PY32F002A系列微控制器的工作温度范围为-40℃-85℃，工作电压�
 * [PY32F030K28U6TR (QFN32,￥2.59)](https://item.szlcsc.com/3531932.html)
 * [PY32F030K28T6 (LQFP32,￥2.62)](https://item.szlcsc.com/3531934.html)
 
-PY32F0xx的其他系列性价比不及PY32F002A(<￥1.0)，而TSSOP20以内封装超过￥2.0的选择范围很广
+目前，PY32F0xx的其他系列性价比不及PY32F002A(<￥1.0)，而TSSOP20以内封装超过￥2.0的选择范围很广，例如[CH32V003](https://github.com/SoCXin/CH32V003)
 
 * 在￥3.0段当下首推[CH32V203 (LQFP-48,￥2.86)](https://github.com/SoCXin/CH32V203)
 * 在￥5.0段当下超值[N32G430 (LQFP-48,￥4.5)](https://github.com/SoCXin/N32G430)，[RP2040 (QFN-56,￥4.3)](https://github.com/SoCXin/RP2040)
+
+### 开源项目
+
+* [py32f0-template](https://github.com/IOsetting/py32f0-template)
+
